@@ -113,8 +113,8 @@ class Credentials(object):
     @base_url.setter
     def base_url(self, base_url):
         """Set base_url"""
-        if urlparse(base_url).scheme != 'https':
-            raise ValueError('`base_url`s need to be over `https`. Update your `base_url`.')
+#         if urlparse(base_url).scheme != 'https':
+#             raise ValueError('`base_url`s need to be over `https`. Update your `base_url`.')
 
         self._base_url = base_url
         self._norm_credentials()
